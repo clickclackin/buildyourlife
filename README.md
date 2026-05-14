@@ -1,6 +1,6 @@
-# Build your life — An AI-Powered Life Tracker without the micromanaging
+# AI-Powered Life Tracker, without the micromanaging
 
-**A lightweight system that remembers your goals, learns how you operate, does the thinking for you every week, and doesn't breathe down your neck.**
+**A lightweight system that uncovers your goals, learns how you operate, does the thinking for you every week, and doesn't breathe down your neck.**
 
 ---
 
