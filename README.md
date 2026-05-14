@@ -1,6 +1,6 @@
-# AI-Powered Life Tracker, without the micromanaging
+# Buildyourlife: AI-Powered life tracker, without the micromanaging
 
-**A lightweight system that uncovers your goals, learns how you operate, does the thinking for you every week, and doesn't breathe down your neck.**
+**A lightweight system that uncovers your goals, learns how you operate, minimizes logging, and doesn't breathe down your neck.**
 
 ---
 
@@ -10,33 +10,25 @@ Most trackers fail for the same reason: **you do all the cognitive work.** You l
 
 The rest fail for the opposite reason: they're too heavy. The habit apps that turn your life into a game. The journaling systems that require a daily practice. They're all asking you to maintain a second job — managing the *system* itself.
 
-And none of them remember you. Notion doesn't know your 5-year plan when you open Monday's task list. Habit trackers count streaks but have no idea why you started.
-
 ---
 
 ## What this system does differently
 
-**This is a Cursor-native life operating system.** Your goals live in markdown files. An AI reads them every session — automatically. You never paste context. You never re-explain yourself.
+1. **Doesn't lose sight of the big picture**: Once a week, you answer 7 rapid-fire questions. Combining this week's vibe with your larger goals, the system proposes, and you approve.
+2. **Adapts to your energy level**: When you report a high-energy week, the AI proposes bolder goals. When you report medium or low energy, it scales back without you having to say "go easy on me." If you activate crash mode (one word), all growth expectations pause for the week and the floor drops to the minimum. No guilt. No catch-up.
+3. **Private to you**: Your goals and progress live in markdown files on your personal system. Nobody can access your goals. 
+4. **Combats your failure modes proactively**: During setup, you identify your top 3 barriers to actually sticking with a system like this. The built-in cursor rule is engaged when you describe resistance.
+6. **"Not now, but not never"**: It actually circles back on your goals and reservations later - allowing flexibility while keeping you accountable.
 
-But the more important thing isn't that it remembers your goals. It's that **it learns how you personally operate** — and adjusts accordingly.
+---
 
-### It adapts to your energy
+## How it works
 
-When you report a high-energy week, the AI proposes bolder goals. When you report medium or low energy, it scales back without you having to say "go easy on me." If you activate crash mode (one word), all growth expectations pause for the week and the floor drops to the minimum. No guilt. No catch-up.
+1. Setup: Uncover your goals for the next few years, working with your current level of clarity. Short and long versions available.
+2. Check-in, reset, plan: Weekly check-ins are AI-led, and monthly resets are collaborative. But long-term visions are made by you.
+3. Track your progress: See how you've been doing using built-in visualizations.
 
-Over months, the system accumulates a picture of when you tend to crash, what drains you, and what consistently moves the needle — so proposals get more accurate over time.
-
-### It knows your failure modes
-
-During setup, you identify your **top 3 barriers** to actually sticking with a system like this. These get stored in your Life Arc. Every time you say "I'm stuck" or "I can't bring myself to [X]," the AI loads those barriers first and checks whether this is one of your known patterns — and if so, applies the counter-protocol *you* set for yourself during onboarding.
-
-Not generic advice. Your patterns, reflected back at you.
-
-### It builds a model of who you are
-
-An optional 15-minute deep dive at the end of each weekly check-in accumulates over time into a profile — not a personality type, but a running record of what you've been drawn to, what you've been avoiding, and what that says about what you actually want. The AI uses this to push back with something like *"this is the third time this has come up around [X] — what do you think is driving it?"*
-
-### The weekly check-in is 15 minutes. The AI does the rest.
+### The weekly check-in is capped at 15 minutes. The AI does the rest.
 
 Every week, you type `weekly check-in`. The AI:
 - Loads your 1-year goals, last month's plan, and last 2 weeks of history — before you say a word
@@ -44,8 +36,6 @@ Every week, you type `weekly check-in`. The AI:
 - Proposes 5 specific goals for the week based on your pace and what you've been avoiding
 - Sets your 3 weekly reminders so you don't have to think about it during the week
 - Flags if you're drifting off pace for the month — automatically
-
-**You spend 15 minutes. The AI tracks the trend.**
 
 ### Monthly: you reflect, the AI synthesizes
 
