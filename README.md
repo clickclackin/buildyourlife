@@ -1,4 +1,4 @@
-# Life Building — AI-Powered Life Tracker
+# Build your life — An AI-Powered Life Tracker without the micromanaging
 
 **A lightweight system that remembers your goals, learns how you operate, does the thinking for you every week, and never lets you drift.**
 
@@ -8,7 +8,7 @@
 
 Most trackers fail for the same reason: **you do all the cognitive work.** You log, you interpret, you decide what it means, you figure out what to do next. After a few weeks, the friction wins. You stop.
 
-The rest fail for the opposite reason: they're too heavy. The Notion dashboards that take two hours to set up. The habit apps that turn your life into a game. The journaling systems that require a daily practice. They're all asking you to maintain a second job — managing the *system* itself.
+The rest fail for the opposite reason: they're too heavy. The habit apps that turn your life into a game. The journaling systems that require a daily practice. They're all asking you to maintain a second job — managing the *system* itself.
 
 And none of them remember you. Every conversation with ChatGPT starts from zero. Notion doesn't know your 5-year plan when you open Monday's task list. Habit trackers count streaks but have no idea why you started.
 
