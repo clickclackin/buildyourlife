@@ -1,6 +1,6 @@
 # Build your life — An AI-Powered Life Tracker without the micromanaging
 
-**A lightweight system that remembers your goals, learns how you operate, does the thinking for you every week, and never lets you drift.**
+**A lightweight system that remembers your goals, learns how you operate, does the thinking for you every week, and doesn't breathe down your neck.**
 
 ---
 
@@ -10,7 +10,7 @@ Most trackers fail for the same reason: **you do all the cognitive work.** You l
 
 The rest fail for the opposite reason: they're too heavy. The habit apps that turn your life into a game. The journaling systems that require a daily practice. They're all asking you to maintain a second job — managing the *system* itself.
 
-And none of them remember you. Every conversation with ChatGPT starts from zero. Notion doesn't know your 5-year plan when you open Monday's task list. Habit trackers count streaks but have no idea why you started.
+And none of them remember you. Notion doesn't know your 5-year plan when you open Monday's task list. Habit trackers count streaks but have no idea why you started.
 
 ---
 
@@ -38,7 +38,7 @@ An optional 15-minute deep dive at the end of each weekly check-in accumulates o
 
 ### The weekly check-in is 15 minutes. The AI does the rest.
 
-Every Tuesday, you type `weekly check-in`. The AI:
+Every week, you type `weekly check-in`. The AI:
 - Loads your 1-year goals, last month's plan, and last 2 weeks of history — before you say a word
 - Asks 7 rapid-fire questions (numbers and Y/N — no journaling required)
 - Proposes 5 specific goals for the week based on your pace and what you've been avoiding
@@ -85,7 +85,7 @@ This means you are **never** being asked to grow in everything at once. The syst
 | Notion / Obsidian | Flexible, pretty | You do all the thinking; no memory; no adaptation |
 | Habit trackers (Streaks, Habitica) | Good for streaks | No narrative arc; doesn't know who you are; gamification ≠ strategy |
 | Journaling apps | Reflection space | No structure; no output; nothing proposed; no memory across entries |
-| ChatGPT | Smart, fast | Starts from zero every session; no persistent model of you |
+| ChatGPT | Smart, fast | No persistent model that reliably circles backs on your goals |
 | Therapist / life coach | Deep insight | Expensive; not available at 11pm; doesn't track your weekly data |
 | Goal-setting frameworks (OKRs, SMART) | Structured planning | Static; no one checks in weekly; doesn't adapt to your energy or capacity |
 
@@ -127,7 +127,7 @@ You can choose:
 - **Deep setup (~2 hours):** stronger baseline detail and clearer milestones
 
 After setup, your weekly workflow is:
-- **Every Tuesday:** `weekly check-in` (15 min)
+- **Every week:** `weekly check-in` (15 min)
 - **End of each month:** `monthly reset` (60 min)
 - **Every quarter:** self-led review using your logs
 
