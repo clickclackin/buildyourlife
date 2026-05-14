@@ -1,0 +1,45 @@
+# Personal data — exclude from public repository
+# These files contain personal life data and are specific to the original user.
+# New users generate their own versions via the `start` command.
+
+# Personal life arc (generated per-user by the start command)
+Life-Arc-Overview.md
+Life-Arc-Overview-*.md
+# Public example structure (ship this); negation must follow the rule above
+!Life-Arc-Overview-TEMPLATE.md
+
+# Intellectual / side project list (personal; fill from template after clone)
+System/Project-Tracker.md
+
+# Weekly and monthly tracking logs (personal data)
+System/Progress-Log.md
+System/Progress-Visualizations.md
+System/Role-Compass-Log.md
+System/Reflections-Log.md
+
+# Monthly plan files (personal; auto-generated each month)
+System/Monthly-Plans/[0-9][0-9][0-9][0-9]-*.md
+
+# Historical data (personal records)
+System/Data/monthly-history/*.json
+System/Data/monthly-history/*.ndjson
+
+# App-specific project files (personal)
+System/App-Project/
+
+# Notion setup guide (contains personal workspace IDs if configured)
+System/Notion-MCP-Setup-Guide.md
+
+# Workspace file (IDE-specific, not needed for replication)
+System/Life Building.code-workspace
+
+# Personal curriculum docs
+*.docx
+
+# OS files
+.DS_Store
+**/.DS_Store
+
+# Editor files
+.vscode/
+*.code-workspace

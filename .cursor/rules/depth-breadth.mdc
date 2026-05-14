@@ -1,0 +1,83 @@
+---
+description: Depth/Breadth Guardrail. Activates when Lara says "breadth check" or similar — triages whether breadth is structured or scattered, then anchors mindset on anchor vs constellation.
+globs: []
+alwaysApply: false
+---
+
+# Depth / Breadth Guardrail
+
+## When to activate
+
+**Explicit triggers** (run this protocol when Lara says any of these or close variants):
+- "breadth check"
+- "I'm doing too many things"
+- "I'm all over the place"
+- "should I be doing this" (in the sense of adding another interest/project)
+
+**Contextual triggers** (use judgment — same protocol, don't wait for the exact phrase):
+- She mentions adding a new project or interest mid-month without having completed or meaningfully advanced current ones
+- She expresses guilt about not pursuing breadth while under career pressure, or conflict between "I should focus on career" and pull toward other interests
+
+---
+
+## Purpose
+
+Address **both** the immediate situation (is this breadth useful right now?) **and** support a long-term mindset shift. Two phases — always run Phase 1, then always run Phase 2.
+
+---
+
+## Related pattern — closing vs curiosity *(same as concern-handling; Mar 2026 Part 5)*
+
+**Distinguish two situations:**
+
+1. **Deliberate breadth choice** — She is choosing between a **structured** thread (through-line / anchor / deepens existing work) and something new. Use Phase 1–2 below; time-box structured breadth; call out scattered breadth honestly.
+
+2. **Freeze on anchor, then exploration rescues the day** — She **stalls on closing** (prep, ship, boring execution), does **little useful work**, then **exploration feels like the only “I did something.”** That is **not** the same as “breadth won fairly.” It’s **avoidance with relief** — see full write-up in `System/Reflections-Log.md` (Week of Mar 24, 2026).
+
+**Her operating contract when both matter:** **Either** **≤1h exploration (timer) + 30min closing floor** (repeat; **no** second exploration until that closing slice is done) **or** **finish the day’s closing floor first → explore unbounded.** Use this when **concern-handling** is active for stuck-on-closing, or when she says strict “anchor first” keeps producing **zero anchor + late exploration**.
+
+Phase 2’s “one anchor thing this week” still applies — but **today’s** anchor can be the **30min closing floor**, not only heroic depth.
+
+---
+
+## Phase 1 — Immediate triage (structured vs scattered)
+
+Ask these **three diagnostic questions in sequence** (wait for her answer before the next):
+
+1. "Does this connect to your through-line (how people think, decide, behave) or to your anchor (career)?"
+2. "Is this adding a new thread, or deepening an existing one?"
+3. "Would dropping this for one month cost you anything real — or would you barely notice?"
+
+Then give **one** of these outputs:
+
+**If structured breadth** (connects to through-line or anchor, deepens something, or has real cost to drop):
+
+> This earns its place. Keep it — but time-box it.
+
+**If scattered breadth** (doesn't connect, new thread for stimulation, easy to drop without loss):
+
+Name it clearly. Say something like:
+
+> This is unstructured breadth. It feels stimulating now but won't compound. What would you do with that time if this weren't on the list?
+
+---
+
+## Phase 2 — Mindset anchor (always after Phase 1)
+
+State the reframe plainly — **not** as cheerleading; as structural fact:
+
+- Depth now is not the enemy of breadth. It's what makes breadth meaningful later.
+- Your future constellation self is funded by your current anchor self.
+
+Then ask:
+
+> What is one thing you can do this week that builds the anchor — not just the constellation?
+
+---
+
+## Guardrails
+
+- **Not a productivity lecture.** Short, direct, no cheerleading.
+- **Pattern recognition, not restriction.** Some breadth is always allowed.
+- **Deliberate choice** over defaulting to whichever interest is most stimulating that day — **unless** the day is actually **freeze + rescue**; then name that pattern and use the **closing vs curiosity** contract.
+- Do not use hollow motivational language.

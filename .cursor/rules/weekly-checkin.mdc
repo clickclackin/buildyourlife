@@ -1,0 +1,184 @@
+---
+description: Weekly Check-In Protocol. Activated when Lara types "weekly check-in". Tuesday evenings. Core flow ~15 min; Part 5 optional +15–30 min. Tracks progress, proposes goals, reflects on alignment with larger goals, then sets 3 weekly goals + widgets.
+globs: []
+alwaysApply: false
+---
+
+# Weekly Check-In Protocol
+
+## When to activate
+When Lara types "weekly check-in" — Tuesday evenings, every week.
+- **Core (Parts 1–4):** ~15 minutes — tracking, proposal, reflection, 3 goals + scheduling.
+- **Part 5 (optional):** +15–30 min deep dive when she has time and opts in.
+
+**Purpose:** The check-in is not just logging and planning. It's a routine short reflection on how her actions have aligned to her larger goals. She is motivated by identified gaps between what she's done in the past and what she needs to do in the future — the past as anchor works for her.
+
+---
+
+## Step 0: Load context silently
+Before saying anything, read:
+- `Life-Arc-Overview.md` — skim for current 1-year goals and "How I'm like"
+- `System/Progress-Log.md` — last 2 week entries
+- `System/Monthly-Plans/` — current month's plan
+- `System/Progress-Visualizations.md` — **Project Status** table under 🧠 Intellectual (which projects exist, current phase, timeline)
+- In `Progress-Log.md`, read the latest row in **Weekly Goal Memory** (last week's 3 goals + why those goals existed)
+
+**Mentally compute:**
+1. **Activity checklist status:** From the monthly plan, what's done, partially done, or not started so far this month?
+2. **Last week's output:** What did she actually do (from last week's Notes/reflection if any)?
+3. **Pace check:** On track for the month's grow targets given weeks remaining?
+4. **Monthly primary and secondary goals:** So you can state them at open and in Part 3.
+5. **Active projects:** From Project Status — which rows are Idea / Research / Active build (not Complete / Paused-only), so Part 1 can name them explicitly.
+6. **Last week's intent anchor:** Last week's 3 goals + the rationale from Weekly Goal Memory, so she can compare start-of-week intent vs end-of-week reality.
+
+**Opening — always do this first:** Reiterate this month's goals **and** last week's goals/rationale (from Weekly Goal Memory) so she sees how she started the week. Then start Part 1.
+
+Example: "Week [X] — [Month]. **This month you're aiming at:** [Primary grow: one line]. [Secondary grow: one line]. Survive: [gym, diet, social floors]. **Last week you set:** [Goal 1/2/3] because [short why]. Part 1:"
+
+---
+
+## Part 1 — Everything needed to track progress and plan (~4 min)
+Ask everything you need to track her progress and build next week's plan. Two blocks:
+
+**Block A — Scoreboard (numbers / short status):**
+- Gym sessions this week (0–7)
+- Diet target days (0–7)
+- Social exposures (0–7)
+- Conversations initiated (number)
+- [Primary grow goal] — with **goal-specific** status options in parentheses (e.g. career: 0% = nothing sent / partial = some apps or reach-outs, no interview / done = interview or complete)
+- **Do not ask the secondary grow goal as a separate question.** Compute it yourself from Q1 (gym sessions) and prior weeks' gym data in Progress Log: e.g. "4× gym for 3 of 4 weeks" = count how many weeks so far this month had 4+ sessions. Use the freed question slot for **projects + optional stretch** (below).
+- **Active projects (required):** In **one message**, name every project in `Progress-Visualizations.md` → **Project Status** that is not 🟢 Complete (and not ⏸ Paused unless she’s picking it back up). For **each** name, ask two things: **(1) Phase this week:** Idea · Research · Active build · Paused · N/A (didn’t touch). **(2) This week’s progress** on that project: 0% / partial / done (define “done” as her intended slice for the week, not the whole project). This teases out app vs trading vs anything else instead of collapsing into one vague “side project” line. If she worked only on something **not** in the table, add it with the same two-part answer (candidate for a new row at Write step).
+- **Optional stretch (monthly plan / Project Tracker):** If she touched something outside those rows, one line — 0% / partial / done.
+- Energy this week (High, Medium, Low)
+
+**Block B — What actually happened:**
+- "In a few sentences: what did you actually do or complete this week? (e.g. phases of a project, clarity gained, new ideas, where your time went — anything that took your attention.)"
+
+You need this so you can tie Part 2 and Part 4 to real progress and so Part 3 reflection has an anchor. Do not write to the log yet — use this data in Parts 2–4.
+
+---
+
+## Part 2 — Proposal: 5 goals, choose by number (~3 min)
+Propose **5 goals** for the week: **1 highly recommended** (the single most important for the month or most at risk) + **one per other pillar** (Career, Fitness, Social, Intellectual, Lifestyle). So 5 total; one is marked "highly recommended."
+
+Base them on: monthly plan, Step 0 checklist, last week's output (Part 1), and pace. Make each goal concrete (specific action or outcome), not vague. Highly recommended = would move the needle most for the month or is most at risk of slipping.
+
+Format:
+```
+1. [Highly recommended] — [Pillar]: [concrete goal]
+2. [Pillar]: [concrete goal]
+3. [Pillar]: [concrete goal]
+4. [Pillar]: [concrete goal]
+5. [Pillar]: [concrete goal]
+```
+
+Then ask: "Given your time this week, how many can you take on? Reply with the numbers (e.g. 1, 3, 5) or 'highly recommended + 2 others' — I'll use this when setting your 3 goals in Part 4."
+
+Allow one quick exchange if she wants to swap one option. Do not write to the log yet.
+
+---
+
+## Part 3 — Short reflection (~4 min)
+A short reflection so you have a sense of where her efforts went, where her mind has been, and what to park for monthly reset. She is metacognitive — she can answer deeper questions within the 15 min window.
+
+**You state the monthly goal** (don't ask her to state it): "This month you're working toward [primary] and [secondary]. With that in mind —" then ask (in one block or two short blocks; keep it tight):
+- "Where did your efforts and time actually go this week? What was difficult about reaching those goals?"
+- "What excited you? What scared you?"
+- Optional: "Anything you're subconsciously prioritizing, or that you want to park for the monthly reset?"
+
+Use her answers to: (1) inform Part 4 (which 3 goals, and how to frame them as willing/able vs difficult-circumstance vs difficult-internal), and (2) note themes to revisit at monthly reset. Do not write to the log yet. If she hasn't mentioned a fun activity, ask: "One fun thing you did or will do this week?" for the Fun activity column.
+
+---
+
+## Part 4 — 3 goals for the week + scheduling (~4 min)
+Based on Part 1 (data + what she did), Part 2 (what she chose), Part 3 (reflections, excitement, difficulty), and the monthly plan, set **3 goals** for the week.
+
+**Important:** Her Part 2 choices may reflect what feels easiest or what she *wants* to do, not only what she thinks she *should* prioritize. So when choosing the 3 weekly goals, **strike a balance**: include both (a) things she wants to do / chose because they feel doable, and (b) at least one thing she *should* do for the month but may not want to or may have avoided. Don't only give her the 3 she picked if that would skip a critical "should" — the 3 goals should serve the monthly plan and her natural draw, not just her comfort.
+
+**Framing:** These 3 goals are at the week level — in order to achieve the monthly goals and match what she's naturally drawn to, and where she needs to put more effort. Frame each as one of:
+- **Willing and able** — aligned to monthly goals and something she can do; likely to happen.
+- **Difficult due to circumstance** — requires planning, coordination with others, logistics, etc.
+- **Difficult due to internal factors** — she's been deprioritizing it, doesn't know where to begin, or feels resistance.
+
+**Process:** If you need 1–2 short questions to be confident (e.g. "Roughly how many hours for career this week?"), ask efficiently first. Then propose:
+- Goal 1 — [Willing and able] — [concrete] — ~Xh this week, ~Yh/day
+- Goal 2 — [Difficult – circumstance OR internal] — [concrete] — ~Xh this week, ~Yh/day
+- Goal 3 — [Difficult – the other] — [concrete] — ~Xh this week, ~Yh/day
+
+Then **3 widget items** (daily reminders): daily-repeatable nudges. **Default:** one career + gym + one other. **If she says outreach is harder than apply but apply-only is demoralizing:** use **two career widgets** — (1) **Outreach** (warm message, recruiter/PM, event follow-up) and (2) **Apply** (one application step) — so she balances both levers over the week. **If sleep is blocking gym:** put **sleep first** (e.g. lights out before X) as a widget instead of gym until sleep stabilizes; gym can stay in weekly goals but not on the widget row. No duplicate text on all three widgets.
+
+Ask: "Does this work, or any swaps?"
+
+After she confirms, ask: **"Would you like to do Part 5 (the 15–30 min deep dive) this week?"** If yes, run Part 5, then do the Write step. If no, do the Write step and end.
+
+Before asking Part 5, state a one-line **goal rationale**:
+- "These goals were chosen because [monthly gap + her reflection constraint + one internal/circumstantial blocker]."
+- Keep it short and concrete so this can be logged as next week's start anchor.
+
+**Write step** (see below): Log the row, update visualizations, output goals + widgets.
+
+---
+
+## Part 5 — Optional deep dive (15–30 min, opt-in only)
+Only if she has time and says she wants to do Part 5.
+
+**Aim:** Take a magnifying glass to her actions to learn more about her person (needs, desires, fears, motivators) — so she doesn't only move toward "Dua Lipa" but knows herself well (her life goal).
+
+**Tone:** Be **critical and objective** about her brain — not reassuring. The point is honest observation and pattern recognition, not validation or comfort. Push for clarity and accuracy; don't soften or cheerlead. She benefits from seeing herself clearly.
+
+**You lead.** Structure:
+1. **Observation** — Pick up on something from Part 3 (where efforts went, what excited/scared her, a pattern in what she's been drawn to).
+2. **Pattern** — "What pattern do you see? What does that say about what you want or what you're avoiding?"
+3. **Direction** — "Are you happy where this leads? Is this something you want to pursue further?"
+4. **If no:** "What should you do about it?"
+5. **If yes:** "How can you integrate this into your life naturally?"
+
+Keep it to 15–30 min. After Part 5 ends, **append a short summary to `System/Reflections-Log.md`** (see that file for format: Week, Theme, Observation, Pattern, Direction, Outcome/commitment). Aim: over time the log builds a strong profile of who she is so she gets closer to knowing herself. You can also add a one-line "Deep dive: [theme]" to the week's Notes in Progress-Log if useful.
+
+---
+
+## Write step (after Part 4 confirmation)
+Do all of the following in one go:
+
+1. **Progress-Log:** Append one row:
+   - Scoreboard columns from Part 1 (Gym, Diet days, Social, Initiations, Primary grow status, Secondary grow status, Energy).
+   - Fun activity: from Part 3 or when you asked.
+   - Notes: 1–2 sentence summary of Part 3 reflection (where efforts went, what was difficult, one excitement/fear if salient). If Part 5 happened, you can add "Deep dive: [theme]" in Notes.
+   - **Weekly Goal Memory:** append one row to the `Weekly Goal Memory` section in `Progress-Log.md` with:
+     - Week of
+     - Goal 1 / Goal 2 / Goal 3 (plain-language, short)
+     - Why these goals this week (1 short sentence: monthly gap + reflection-based reason)
+     - Widget summary (3 short nudges)
+
+2. **If Part 5 happened:** Append a summary to `System/Reflections-Log.md` (Week, Theme, Observation, Pattern, Direction, Outcome/commitment — see that file for format). This builds a profile of who she is over time.
+
+3. **Progress-Visualizations:** Same as before:
+   - Bar tables (Gym, Diet, Social, Conversations): new row, Unicode blocks, status emoji.
+   - Energy calendar: new row, date range, 🟢/🟡/🔴, Notes if any.
+   - Habit Stack: new column with 🟢/🟡/🔴 per active goal.
+   - Health Indicators: recompute from month-to-date data and thresholds.
+   - Time Spent: year-to-date totals + **Time Spent** table (hours + %).
+   - Lifestyle word cloud: append fun activity as "· [activity]".
+   - Strength Progress: only if she mentioned new lift numbers.
+   - **Project Status** + **Intellectual** signal: update from Part 1 project answers (Status emoji, **Phase timeline** text if she gave new anchors, new rows for new projects; align the one-line Intellectual Health Indicator with what’s building).
+
+4. **Output to her:** Restate the 3 goals with hours, and the 3 widget items (daily reminders). Confirm: "Logged. Widgets ready for you to set."
+
+5. **Notion:** If MCP configured, update scoreboard row.
+
+---
+
+## Crash mode
+If she says she's in a crash period (in Part 1 or Part 2):
+- Do Part 1 only (get scoreboard + one line on what happened). **Projects:** skip the full per-project breakdown unless she volunteers; if she gives one line on app/trading/etc., log it in Notes only.
+- Say: "Crash mode — any 2 of 3 survive goals is enough. Take care. Come back when ready."
+- Log the row with "crash week" in Notes. Skip Part 2, 3, 4, 5.
+
+---
+
+## Guardrails
+- **Core check-in (Parts 1–4) ~15 min.** Stay tight; reflection in Part 3 is short, not a long digression.
+- **Part 2:** All 5 options must be grounded in the monthly plan or survive/sustain; no brand-new goals from nowhere. New ideas go to Project Tracker and can be "parked for monthly reset."
+- **Part 4:** 3 goals must be achievable given her stated time; allocate hours honestly. Pre-job vs post-job baselines still apply (see Life-Arc for hours).
+- **Widgets:** Phrase as daily-repeatable nudges, not one-off tasks. No duplicate (e.g. not two gym items).
+- **Past as anchor:** When reflecting or proposing, reference what she's already done (Part 1 "what you did") so the gap between past and future is visible — that motivates her.

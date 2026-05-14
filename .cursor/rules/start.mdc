@@ -1,0 +1,528 @@
+---
+description: Life Arc Setup. Activated when the user types "start". Guides a new user through building their personal Life-Arc-Overview.md via structured multiple-choice questions. Calibrates depth of handholding based on how clear their vision already is.
+globs: []
+alwaysApply: false
+---
+
+# Life Arc Setup — Start Command
+
+## When to activate
+When the user types "start" or "life arc setup" — this is the first-time onboarding for a new user who has not yet created a `Life-Arc-Overview.md`.
+
+**If `Life-Arc-Overview.md` already exists:** Open with "It looks like you already have a Life Arc set up. Want to (A) review and update it, or (B) start fresh?" Do not overwrite unless they explicitly choose B.
+
+**Total time:** 30 min (quick) or up to 2 hours (deep). Let the user choose at the start.
+
+---
+
+## What you're building
+
+By the end of this session, you will generate the user's `Life-Arc-Overview.md` — their permanent north star document. This file:
+- Defines their vision, life pillars, working style, and 1-year goals
+- Is automatically loaded by the AI in every future weekly check-in and monthly reset
+- Does not need to be edited often — only at quarterly reviews or when something fundamental changes
+
+---
+
+## Step 0: Open + choose setup depth
+
+Say exactly this (fill in the blanks as appropriate):
+
+> "Welcome. We're going to set up your system and build your Life Arc — the document that tells this system who you are, what you're optimizing for, and why.
+>
+> First pick your setup mode:
+> A) **Quick setup (~30 min)** — minimum viable setup so you can start weekly check-ins immediately.
+> B) **Deep setup (~2 hours)** — full setup with stronger detail, cleaner baselines, and better first-month calibration.
+>
+> Then we'll do technical setup and vision setup in one flow."
+
+Store mode as `quick` or `deep`.
+
+---
+
+## Step 0.5: Technical setup (required)
+
+Before vision questions, ensure the user can run the system in their own workspace. Ask and guide through each item:
+
+1. **Cursor check**
+   - "Do you already have Cursor installed and can open this project folder in it? (Y/N)"
+   - If no, pause and guide them: install Cursor, open project folder, return.
+
+2. **Project location check**
+   - "Confirm you're running this from your own local folder (not someone else's absolute path)."
+   - Explain: all rules should use workspace-relative paths (like `System/Progress-Log.md`), not machine-specific absolute paths.
+
+3. **Rules present check**
+   - Verify these files exist: `.cursor/rules/start.mdc`, `.cursor/rules/weekly-checkin.mdc`, `.cursor/rules/monthly-reset.mdc`, `.cursor/rules/concern-handling.mdc`.
+   - If any are missing, create/fix before continuing.
+
+4. **Personal-data safety check**
+   - Confirm `.gitignore` exists and excludes personal files (`Life-Arc-Overview.md`, `System/Progress-Log.md`, `System/Progress-Visualizations.md`, `System/Role-Compass-Log.md`, `System/Reflections-Log.md`, `System/Monthly-Plans/YYYY-*.md`, `System/Data/monthly-history/*`).
+   - Explain this prevents accidental upload of personal data.
+
+5. **First-run files check**
+   - Ensure these seed files exist:
+     - `System/Monthly-Plans/TEMPLATE-Plan.md`
+     - `System/Project-Tracker.md` — if missing, copy `System/Project-Tracker-TEMPLATE.md` → `Project-Tracker.md` (personal; usually gitignored when publishing)
+     - `System/Role-Compass-Log.md`
+     - `System/Reflections-Log.md`
+   - If missing, create minimal stubs and continue.
+
+6. **Optional Notion integration choice**
+   - Ask: "Do you want Notion sync now or later?"
+   - A) Now → walk them through `System/Notion-MCP-Setup-Guide.md`
+   - B) Later → continue without blocking setup
+
+Do not proceed to vision setup until items 1–5 are complete.
+
+---
+
+## Step 1: Vision clarity calibration
+
+**Ask this first — it determines how much handholding the rest of the session needs.**
+
+> **Q1. How clear is your life vision for the next few years?**
+>
+> A) Very clear — I know what I want, why I want it, and roughly how to get there
+> B) Somewhat clear — I have a general direction and values but haven't articulated it fully
+> C) Vague — I have some ideas but they feel scattered or contradictory
+> D) No idea — I'm figuring it out from scratch
+
+**Calibration rules:**
+- **A → High clarity mode:** Skip leading prompts. Allow open-ended answers for most questions. Use follow-up questions to deepen and pressure-test rather than guide.
+- **B → Guided mode:** Offer multiple-choice options but allow free-text additions. Ask follow-up questions to surface what they already half-know.
+- **C or D → Scaffolded mode:** Lead with specific multiple-choice options at every step. Ask one small question at a time. Reflect their answers back before moving on.
+
+Store their calibration level internally and apply it throughout.
+
+**Mode depth rules:**
+- `quick` mode: keep momentum, accept rough answers, skip optional deep probes.
+- `deep` mode: ask follow-up probes for each pillar, baseline, and milestone; challenge vague goals into concrete versions.
+
+---
+
+## Step 2: Life pillars
+
+> **Q2. Which areas of your life do you want to actively track and improve?**
+> *(Select all that apply — you can add your own)*
+>
+> A) Career / professional work
+> B) Fitness / physical health
+> C) Social life / relationships
+> D) Intellectual growth / side projects / learning
+> E) Mental health / emotional wellbeing
+> F) Financial health
+> G) Creative expression (writing, art, music, etc.)
+> H) Other: ____________
+
+**Note:** You don't need to track everything. Most people find 3–5 pillars is the right number — enough to cover a whole life without too much overhead. If they select 6+, gently flag: "That's a lot to track simultaneously. You can always add pillars later — want to narrow to the 4–5 that matter most right now?"
+
+Store their selected pillars. All future questions are scoped to what they selected.
+
+---
+
+## Step 3: The anchor
+
+> **Q3. If you had to pick one area that is your "anchor" — the domain where you most want to be credible, skilled, and well-compensated — what would it be?**
+>
+> *(This doesn't mean it's the most important thing in your life. It means it's the foundation: the thing that earns you legitimacy and funding so the rest can thrive.)*
+>
+> A) My career / professional role
+> B) Building a business or freelance practice
+> C) A craft or creative skill (writing, design, code, music, etc.)
+> D) Something I haven't defined yet
+> E) I don't want an "anchor" — I want everything to be equal weight
+
+**If they pick E:** Gently note: "Most people find that without one anchor, everything becomes equally urgent and nothing gets deep. But you can run the system with equal-weight pillars — it just means no 'primary grow' priority in career. Let's continue and see if something emerges."
+
+---
+
+## Step 4: Vision — the long version
+
+**(Scaffolded mode: ask each sub-question separately. High clarity mode: ask as one block.)**
+
+> **Q4. Let's build your vision.**
+
+**4a. The 5-year version:**
+> In 5 years, if things went well — not perfectly, but genuinely well — what would your life look like? Describe it in terms of what you're doing, who you're with, how you feel day-to-day.
+>
+> *(If you're in scaffolded mode, choose the closest answer and add any detail:)*
+>
+> A) I'd have a well-regarded job or career that I'm proud of and that gives me financial stability
+> B) I'd be running my own thing — business, practice, or creative work — with real traction
+> C) I'd have built deep expertise or a reputation in something I care about
+> D) My life would feel rich in relationships, experiences, and physical vitality — even if work is not the centerpiece
+> E) Something else: ____________
+
+**4b. The deathbed version:**
+> On your deathbed, what would you most want to feel proud of? What would feel like a waste?
+>
+> *(No multiple choice here — just answer freely.)*
+
+In `quick` mode, make this optional if they feel blocked.
+
+**4c. The one-line version:**
+> Summarize it in one sentence: "I want to be [X], and feel [Y]."
+>
+> *(If they're struggling, offer:)*
+> - "I want to be excellent at [anchor] and interesting across [constellation]."
+> - "I want a life where I'm proud of my work AND proud of how I lived it."
+> - "I want to be known for [X] and feel [Y] most days."
+>
+> Help them land on a one-liner. This becomes the top of their Life-Arc-Overview.
+
+---
+
+## Step 5: How they work best (the "How I'm like" section)
+
+> **Q5. How do you work and think best?**
+
+**5a. Working style:**
+> A) I prefer deep focus on a few things at a time
+> B) I like variety — I do better with multiple threads running in parallel
+> C) I need structure and deadlines to produce; I don't self-direct easily
+> D) I do my best work autonomously with a clear goal but no prescribed method
+
+**5b. Environment:**
+> A) I thrive in small, high-autonomy environments (startups, freelance, solo work)
+> B) I do well in larger organizations if I have clear scope
+> C) I'm not sure yet — I haven't had enough variety to know
+
+**5c. What kind of work energizes you? (pick up to 2)**
+> A) Figuring out why people do what they do (psychology, behavior, motivation)
+> B) Building things (products, systems, tools, creative work)
+> C) Strategy and decision-making (figuring out what to do and why)
+> D) Communicating and translating (making complex things clear)
+> E) Researching and synthesizing (understanding things deeply before acting)
+> F) Optimizing and improving (finding inefficiencies and fixing them)
+> G) Other: ____________
+
+**5d. (Scaffolded/guided mode only)** What's the gap between how you work now and how you want to work?
+> A) I have the skills but not the environment
+> B) I have the environment but haven't developed the skills
+> C) Both need work
+> D) I'm mostly there
+
+Store these answers. They become the "How I'm like" section — used by the AI to frame career and intellectual recommendations.
+
+In `deep` mode, add one follow-up:
+> "What's one environment where you did your best work, and one where you felt drained? Why?"
+
+---
+
+## Step 6: Current baseline (per pillar)
+
+*Ask about each pillar they selected in Q2. Keep it quick — these are starting points, not confessions.*
+
+For **each selected pillar**, ask 2–3 rapid questions. Examples by pillar:
+
+**Career:**
+> - Where are you right now? (employed / job hunting / freelancing / student / career change)
+> - What type of work are you doing or trying to move into?
+> - What's your biggest current constraint? (A) No offer/role yet (B) Wrong role (C) Skill gap (D) Location/visa (E) Other
+
+**Fitness:**
+> - How often do you exercise right now, honestly? (A) 0 (B) 1–2x/week (C) 3–4x/week (D) 5+/week
+> - Is diet a factor you want to track? (Y/N)
+> - Do you have a specific physique or performance goal? (Y/N — if yes, briefly describe)
+
+**Social:**
+> - How's your social world right now? (A) Isolated — very few connections (B) Some connections but want more depth (C) Decent network but low intimacy (D) Pretty healthy but want to improve something specific)
+> - Do you find initiating conversations or plans easy or hard?
+
+**Intellectual / Projects:**
+> - Do you have any active projects or ideas you're sitting on? (Y/N)
+> - What's your pattern? (A) Love starting, bad at finishing (B) Overthink before starting (C) Consistent executor (D) Haven't built the habit yet)
+
+**Mental / Emotional:**
+> - Are there recurring patterns you want to get better at managing? (A) Anxiety / overthinking (B) Low motivation / low periods (C) Perfectionism / avoidance (D) People-pleasing / boundaries (E) Other)
+
+**Financial:**
+> - Current state? (A) In debt or financial stress (B) Breaking even but not building (C) Saving but no system (D) System in place, want to optimize)
+
+**Creative:**
+> - Do you have a specific output or craft you want to develop? Briefly describe.
+
+If `deep` mode, add:
+> - "What has repeatedly blocked progress in this pillar over the last 6–12 months?"
+
+---
+
+## Step 7: 1-year goals (per pillar)
+
+> **Q7. What would a genuine win look like in 1 year for each of your pillars?**
+
+*Ask about the anchor pillar first, then the others. Use their calibration level to determine how open-ended the prompts are.*
+
+**For each pillar:**
+
+**Career (if anchor):**
+> A) I have a specific job / company / role type I'm aiming for → describe it
+> B) I'm figuring out what role type fits me best → "clarity on role type + at least one strong interview process"
+> C) I want to grow within my current role → "promoted / expanded scope / specific new skill"
+> D) I want to build something of my own → describe the milestone
+
+**Fitness:**
+> A) Visual goal (specific body composition change, fits into a specific item of clothing)
+> B) Performance goal (lift X, run Y, sport milestone)
+> C) Habit goal (gym Nx/week as reliable default)
+> D) All of the above — let them describe
+
+**Social:**
+> A) I have 2–3 communities I attend regularly
+> B) I have a group of 5–8 people I actually want to spend time with
+> C) I'm not anxious to initiate anymore — it's just what I do
+> D) Their own: ____________
+
+**Intellectual:**
+> A) I've shipped 3–6 projects (started + ended + output + >1 week each)
+> B) I've built a consistent output habit — not just bursts
+> C) I've completed one specific project that matters to me → name it
+> D) I've built a public presence or reputation in something
+
+If `deep` mode, force success criteria for each selected pillar:
+> "How will we know this is achieved — what specific evidence would prove it?"
+
+---
+
+## Step 8: Confirm + synthesize
+
+Before generating, reflect their answers back in 3–5 sentences:
+
+> "Based on what you've said:
+> - Your anchor is [X]. The version of you in 5 years is [their one-liner, slightly polished].
+> - Your strongest current pillar seems to be [X]; the biggest gap is [Y].
+> - Your working style suggests you do best when [observation from Q5].
+> - Your 1-year priorities are: [list by pillar — brief].
+>
+> Does this feel accurate? Anything to add or correct before I generate your Life Arc?"
+
+Wait for confirmation. Apply any corrections.
+
+---
+
+## Step 8.5: Known barriers (before generating)
+
+Before writing the file, ask this. It takes 3 minutes and makes the concern-handling command meaningfully better.
+
+> **Q: Most people who set up a system like this stop within 2 weeks. What are the top 3 things most likely to make you abandon this one?**
+>
+> *(Pick up to 3 — add your own if none fit)*
+>
+> A) I forget — routines don't stick unless something external forces them
+> B) When life gets chaotic, structured check-ins are the first thing I drop
+> C) I'll lose interest once the novelty wears off
+> D) I won't do it if I can't do it "properly" — partial effort feels pointless
+> E) Slow or invisible progress will demoralize me and I'll quietly stop
+> F) I go through low-energy or low-mood periods where nothing gets done
+> G) The goals will start to feel abstract and stop motivating me day-to-day
+> H) I'll keep the idea but do the logging badly — garbage in, garbage out
+> I) I have a pattern of starting things and not finishing them (projects, systems, goals)
+> J) Something else: ____________
+
+After they answer, ask one follow-up only:
+
+> "For each barrier you named: has this ended a system or habit for you before? What happened?"
+
+*(In `quick` mode, skip the follow-up if they're short on time — accept the 3 answers and move on.)*
+
+Reflect the barriers back briefly:
+> "Got it. Your most likely failure modes are [1], [2], [3]. I'll load these every time you say you're stuck — so instead of generic advice, you'll get responses that account for your specific patterns."
+
+Store all three with context. These go into the generated `Life-Arc-Overview.md` under a `## Known Barriers` section (see Step 9 template).
+
+---
+
+## Step 9: Generate Life-Arc-Overview.md
+
+Generate the file at the root of their workspace as `Life-Arc-Overview.md`. Use the structure below. Fill every section with their actual answers — do not leave placeholder text. Where they gave a vague answer, write the vague version honestly (e.g. "Role type still being defined — see Role Compass") rather than inventing specificity.
+
+```markdown
+# Life Arc: [Their Name or "My"] Master Document
+*Last updated: [Month YYYY]*
+
+---
+
+## Vision
+
+[Their one-liner from Q4c]
+
+[2–3 sentences expanding on it: the 5-year version in their voice. What they're building toward — not what they should want, but what they actually said they want. Include the deathbed answer if they gave one.]
+
+---
+
+## How I'm like *(why these choices)*
+
+[3–5 sentences synthesizing their Q5 answers into a coherent self-portrait: thinking style, working environment preference, what energizes them, and how that connects to their anchor choice. This section should read like a friend who knows them well describing why their goals make sense for who they are.]
+
+---
+
+## Baseline ([Month YYYY])
+
+[One section per selected pillar. For each:
+- Status: [current state in 1 sentence]
+- Strengths: [what they already do well]
+- Gaps: [where they're starting from, honestly]
+]
+
+---
+
+## The Approach
+
+**Core philosophy:** Fixed north star ([their 1-year goals]), flexible path (rolling 2-month window).
+
+### Monthly Framework
+
+Each month is structured as:
+
+| Layer | Effort | What it is |
+|---|---|---|
+| **Survive** | 3/10 — floor only | Fixed weekly habits; non-negotiable but minimal |
+| **Sustain** | ~5/10 — acceptable | Hardest thing from last month that needs locking in |
+| **Grow (primary)** | ~7/10 — uncomfortable | 1 main growth target |
+| **Grow (secondary)** | ~5/10 | 1 target in a different pillar |
+
+**Survive goals** (weekly, resets each week — no streaks):
+[List 3 survive floors derived from their baselines and goals. Default: one fitness, one social, one career/intellectual. Calibrate numbers to their starting point — not aspirational, achievable.]
+
+**Crash mode** (self-activated, no formal process):
+- Drop to 2 of 3 survive goals for the rest of that week
+- Grow and Sustain expectations pause — no guilt, no catch-up
+- Weekly check-in can be skipped; monthly reset still happens
+
+### Rollover Logic
+
+- **Primary grow not completed:** Rolls forward as next month's Sustain. A new primary grow is set in a different pillar.
+- **Primary grow fails 2+ consecutive months:** Monthly reset examines root cause — goal too big, wrong timing, or low genuine motivation.
+- **Partial progress is progress:** The Progress Log records partial completion. Monthly reset frames incomplete targets as "continuing," not "failed."
+
+---
+
+## Known Barriers
+
+*Captured during setup. These are the most likely reasons this system fails for me — loaded by the AI whenever I say I'm stuck, so responses are specific to my patterns rather than generic.*
+
+[Barrier 1 label]: [1–2 sentences on what this looks like in practice and what has happened before when it kicks in]
+
+[Barrier 2 label]: [same]
+
+[Barrier 3 label]: [same]
+
+**Counter-protocols (AI reference):**
+- When resistance matches Barrier 1, apply: [specific first-action or reframe]
+- When resistance matches Barrier 2, apply: [specific first-action or reframe]
+- When resistance matches Barrier 3, apply: [specific first-action or reframe]
+
+---
+
+## 1-Year Plan ([Month YYYY] – [Month YYYY+1])
+
+**Theme:** [Derive a 3–5 word theme from their goals. E.g. "Secure position. Build body. Expand social world." or "Ship first thing. Go deeper. Stop hiding."]
+
+[One section per selected pillar, each containing:
+- Goal: [Their 1-year goal, specific]
+- Why this goal fits them: [1 sentence connecting to their Q5 working style / values]
+- Milestones: [3–4 monthly-level stepping stones, honest given their baseline]
+]
+
+---
+
+## 5-Year Plan
+
+### Phase 1: Foundation (Years 1–2)
+
+| Pillar | Target |
+|---|---|
+[One row per pillar with a 2-year target]
+
+### Phase 2: Expansion (Years 3–5)
+
+| Pillar | Target |
+|---|---|
+[One row per pillar with a 5-year target — more ambitious, still plausible given Phase 1]
+
+---
+
+## Systems
+
+### 1. Life-Arc-Overview.md (this document)
+**Purpose:** North star reference. Vision, plan, and approach all in one place.
+**Guardrails:** Updated only at quarterly reviews. Not revised monthly — prevents drift.
+
+### 2. Monthly Plan Files
+**Purpose:** Current month's Survive/Sustain/Grow targets.
+**Location:** `System/Monthly-Plans/YYYY-MM-Plan.md`
+
+### 3. Progress Log
+**Purpose:** Running weekly scoreboard. Primary AI reference for every session.
+**Location:** `System/Progress-Log.md`
+**Guardrails:** Append-only.
+
+### 4. Project Tracker
+**Purpose:** All intellectual/side projects — ideas, active, completed, abandoned.
+**Location:** `System/Project-Tracker.md`
+
+### 5. Role Compass Log
+**Purpose:** Monthly career clarity questions. Pattern synthesis at Months 3, 6, 12.
+**Location:** `System/Role-Compass-Log.md`
+
+### 6. Reflections Log
+**Purpose:** Deep-dive summaries from optional weekly check-in Part 5.
+**Location:** `System/Reflections-Log.md`
+
+---
+
+## Workflow
+
+### Daily (phone, <5 min)
+- Any tracking you do in your existing apps — **don't change what's working**
+- Reminders widget: 3 items set during Tuesday check-in
+
+### Weekly (Tuesday evening, ≤15 min, laptop)
+Open Cursor → type **"weekly check-in"**
+
+### Monthly (end of month, ~60 min, laptop)
+Open Cursor → type **"monthly reset"**
+
+### Quarterly (~3 hours, ideally away from home)
+- Read last 3 months of Progress Log
+- Review Role Compass Log for career patterns
+- Check against 5-year arc
+- Adjust 1-year plan if needed
+
+---
+
+*This document is the north star. The monthly plan files are the path. The Progress Log is the record.*
+```
+
+---
+
+## Step 10: Next steps
+
+After generating the file, say:
+
+> "Your Life Arc is set. Here's what to do next:
+>
+> 1. **Read it** — does it sound like you? If anything feels off, tell me and we'll fix it.
+> 2. **First weekly check-in:** Type `weekly check-in` next Tuesday. The AI will load your Life Arc automatically — you won't need to re-explain anything.
+> 3. **Monthly reset:** At the end of this month (or whenever you're ready to set your first monthly targets), type `monthly reset`.
+>
+> One thing to know: the system gets better over time. The first month is rough calibration. By month 3, it knows your patterns well enough to push back on you."
+
+Then run this checklist before ending:
+- Confirm `Life-Arc-Overview.md` exists in repo root
+- Confirm weekly command works: user can type `weekly check-in`
+- Confirm monthly command works: user can type `monthly reset`
+- Confirm personal-data files are ignored by Git
+- If user chose Notion "now", confirm MCP test passed
+
+---
+
+## Guardrails
+
+- **Never generate placeholder text.** If they didn't give you enough to fill a section, write what you know and flag what's missing in brackets: `[To be defined — revisit at first monthly reset]`
+- **Don't over-inflate.** If their baseline is low, the goals should match where they're starting, not where they wish they were. An honest 1-year target is more useful than an aspirational one.
+- **Keep the voice neutral and direct.** This is not a motivational poster. Write as if describing someone's actual situation and actual goals.
+- **One question at a time in scaffolded mode.** Don't front-load multiple questions in one message if they're at C or D calibration level — it overwhelms and produces shallow answers.
+- **If they get stuck on vision (Q4):** Don't push. Say: "It's fine not to have this fully formed. Let's describe what you *don't* want, and work backward." Ask: "What would feel like a failure in 5 years?" That often unlocks the positive version.
+- **If they want to skip a section:** Allow it. Write `[Skipped — to be filled at quarterly review]` in the relevant section of the Life Arc.
